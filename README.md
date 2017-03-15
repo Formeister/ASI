@@ -1,11 +1,11 @@
 <h2>Bartosz Formela (zaliczenie)</h2>
 
-<h3>Wydarzy³oSiêDzisiaj<h3>
+<h3>WydarzyÅ‚oSiÄ™Dzisiaj<h3>
 
-<p>Aplikacja wyœwietlaj¹ca informacje o aktualnym dniu oraz o powi¹zanych z nim wydarzeniach.<br>
-   Ka¿dy zarejestrowany u¿ytkownik posiada mo¿liwoœæ spersonalizowania konkretnych dni i zapisywania wydarzeñ z w³asnego ¿ycia.</p>
+<p>Aplikacja wyÅ›wietlajÄ…ca informacje o aktualnym dniu oraz powiÄ…zanych z nim wydarzeniach.<br>
+   KaÅ¼dy zarejestrowany uÅ¼ytkownik posiada moÅ¼liwoÅ›Ä‡ spersonalizowania konkretnych dni i zapisywania wydarzeÅ„ z wÅ‚asnego Å¼ycia.</p>
 
-- [ ] [link do wdro¿onej na zewnêtrznym serwerze aplikacji](/)
+- [ ] [link do wdroÅ¼onej na zewnÄ™trznym serwerze aplikacji](/)
 
 <table>
   <tr>
@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-<b>Opis wykorzystanych niestandardowych gemów:</b>
+<b>Opis wykorzystanych niestandardowych gemÃ³w:</b>
 
 <ul>
 <li> <strong>...</strong> - ...</li>
