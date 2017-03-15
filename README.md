@@ -1,6 +1,6 @@
 <h2>Bartosz Formela (zaliczenie)</h2>
 
-<h3>WydarzyłoSięDzisiaj</h3>
+<h4>WydarzyłoSięDzisiaj</h4>
 
 <p>Aplikacja wyświetlająca informacje o aktualnym dniu oraz powiązanych z nim wydarzeniach.<br>
    Każdy zarejestrowany użytkownik posiada możliwość spersonalizowania konkretnych dni i zapisywania wydarzeń z własnego życia.</p>
