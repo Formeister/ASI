@@ -17,7 +17,7 @@
   </tr>
   <tr>
     <td>2.3.3</td>
-    <td>5.0.1</td>
+    <td>5.0.2</td>
     <td>MySQL 5.7</td>
     <td>Bootstrap</td>
     <td>...</td>
