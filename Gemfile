@@ -51,5 +51,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # i18n
 gem 'rails-i18n', '~> 5.0', '>= 5.0.3'
 
-# Bootstrap
+# Twitter Bootstrap
 gem 'twitter-bootstrap-rails', '~> 4.0'
+
+# bcrypt - sophisticated and secure hash algorithm
+gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5', :require => 'bcrypt'
+
+# faker
+gem 'faker', '~> 1.7', '>= 1.7.3'
