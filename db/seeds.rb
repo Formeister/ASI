@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+date = Date.new(0004, 01, 01);
+
+while date <= Date.parse('0004-12-31') do
+  Day.create(date: date);
+  date = date.tomorrow;
+end
