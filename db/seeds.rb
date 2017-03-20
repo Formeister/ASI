@@ -12,3 +12,17 @@ while date <= Date.parse('0004-12-31') do
   Day.create(date: date);
   date = date.tomorrow;
 end
+
+User.create!(name:  "Admin",
+             email: "admin@railstutorial.org",
+             password:              "adminpwd",
+             password_confirmation: "adminpwd",
+             admin: true)
+
+5.times do
+  pass = Faker::Internet.password(min_length = 8, max_length = 16)
+  User.create(name: Faker::Name.name,
+              email: Faker::Internet.unique.email,
+              password: pass,
+              password_confirmation: pass)
+end

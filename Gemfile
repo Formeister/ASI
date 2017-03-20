@@ -59,3 +59,7 @@ gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5', :require => 'bcrypt'
 
 # faker
 gem 'faker', '~> 1.7', '>= 1.7.3'
+
+# will_paginate
+gem 'will_paginate', '~> 3.1', '>= 3.1.5'
+gem 'bootstrap-will_paginate', '~> 0.0.11'

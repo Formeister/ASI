@@ -7,7 +7,7 @@ class AddInitialUsers < ActiveRecord::Migration[5.0]
                   password: pass,
                   password_confirmation: pass)
     end
-    end
+  end
 
   def down
     User.delete_all

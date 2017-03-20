@@ -106,3 +106,9 @@ pl:
       month: Miesiąc
       second: Sekundy
       year: Rok
+
+
+  will_paginate:
+    previous_label: "Poprzednia"
+    next_label: "Następna"
+    page_gap: "&hellip;"
