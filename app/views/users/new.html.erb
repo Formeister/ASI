@@ -1,2 +1,58 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<% provide(:title, 'Sign up') %>
+
+<%= render 'shared/error_messages' %>
+
+<%= form_for(@user, html: { class: "form-horizontal"}, url: signup_path) do |f| %>
+  <fieldset>
+    <!-- Form Name -->
+    <div class="page-header">
+    <legend>Rejestracja</legend>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <%= f.label :name, "Nazwa użytkownika", class: "col-md-4 control-label" %>
+      <div class="col-md-4">
+        <%= f.text_field :name, class: "form-control input-md" %>
+        <span class="help-block">Podaj nazwę swojego konta</span>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <%= f.label :email, "Adres e-mail", class: "col-md-4 control-label" %>
+      <div class="col-md-4">
+
+        <%= f.email_field :email, class: "form-control input-md" %>
+        <span class="help-block">Wpisz swój adres e-mail</span>
+      </div>
+    </div>
+
+    <!-- Password input-->
+    <div class="form-group">
+      <%= f.label :password, "Hasło", class: "col-md-4 control-label" %>
+      <div class="col-md-4">
+        <%= f.password_field :password, class: "form-control input-md" %>
+        <span class="help-block">Hasło do Twojego konta</span>
+      </div>
+    </div>
+
+    <!-- Password input-->
+    <div class="form-group">
+      <%= f.label :password_confirmation, "Powtórz hasło", class: "col-md-4 control-label" %>
+      <div class="col-md-4">
+        <%= f.password_field :password_confirmation, class: "form-control input-md" %>
+        <span class="help-block">Powtórz swoje hasło</span>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="submit"></label>
+      <div class="col-md-4">
+        <%= f.submit "Zarejestruj", class: "btn btn-primary" %>
+      </div>
+    </div>
+
+  </fieldset>
+<% end %>
