@@ -1,0 +1,41 @@
+<% provide(:title, "Log in") %>
+
+<%= form_for(:session, html: { class: "form-horizontal"}, url: login_path) do |f| %>
+    <fieldset>
+      <!-- Form Name -->
+      <div class="page-header">
+        <legend>Logowanie</legend>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <%= f.label :email, "Adres e-mail", class: "col-md-4 control-label" %>
+        <div class="col-md-4">
+
+          <%= f.email_field :email, class: "form-control input-md" %>
+          <span class="help-block">Wpisz swój adres e-mail</span>
+        </div>
+      </div>
+
+      <!-- Password input-->
+      <div class="form-group">
+        <%= f.label :password, "Hasło", class: "col-md-4 control-label" %>
+        <div class="col-md-4">
+          <%= f.password_field :password, class: "form-control input-md" %>
+          <span class="help-block">Hasło do Twojego konta</span>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="submit"></label>
+        <div class="col-md-4">
+          <%= f.submit "Zaloguj", class: "btn btn-primary" %>
+        </div>
+      </div>
+
+    </fieldset>
+<% end %>
+
+<p>Nowy użytkownik? <%= link_to "Zarejestruj się!", signup_path %></p>
+
