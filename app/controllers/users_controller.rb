@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = "Witamy w ZdarzyłoSięDzisiaj!"
-      redirect_to @user
+      redirect_to edit_user_path(@user)
     else
       render 'new'
     end
