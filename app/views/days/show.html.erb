@@ -1,14 +1,9 @@
-<p>
-  <strong>Dzień:</strong>
-  <%= l @day.date, format: :day %>
-</p>
-
-<p>
-  <strong>Miesiąc:</strong>
-  <%= l @day.date, format: :month %>
-</p>
-
-<p>
-  <strong>Opis:</strong>
-  <%= @day.text %>
-</p>
+<div class="row">
+  <div class="col-md-offset-4 col-md-4 text-center">
+    <h1><%= l @day.date, format: :day %></h1>
+    <p><%= l @day.date, format: :month %></p>
+    <p><strong>Zdarzyło się:</strong>
+      <%= @day.text %>
+    </p>
+  </div>
+</div>
