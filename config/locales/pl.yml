@@ -25,18 +25,18 @@ pl:
       month: "%B"
     month_names:
     -
-    - styczeń
-    - luty
-    - marzec
-    - kwiecień
-    - maj
-    - czerwiec
-    - lipiec
-    - sierpień
-    - wrzesień
-    - październik
-    - listopad
-    - grudzień
+    - stycznia
+    - lutego
+    - marca
+    - kwietnia
+    - maja
+    - czerwca
+    - lipca
+    - sierpnia
+    - września
+    - października
+    - listopada
+    - grudnia
     order:
     - :day
     - :month
@@ -112,3 +112,15 @@ pl:
     previous_label: "Poprzednia"
     next_label: "Następna"
     page_gap: "&hellip;"
+
+
+  activerecord:
+    attributes:
+      user:
+        name: "Nazwa użytkownika"
+        email: "E-mail"
+        password: "Hasło"
+        password_confirmation: "Powtórz hasło"
+      user_happening:
+        year: "Rok"
+        body: "Wydarzenie"

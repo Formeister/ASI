@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :days
-  resources :users
+  resources :users do
+    resources :user_happenings
+  end
+
+  resources :days do
+    resources :happenings
+  end
 
   root 'home#index'
 

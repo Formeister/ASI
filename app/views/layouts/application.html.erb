@@ -52,9 +52,10 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
-            <li><a href="<%= user_path(current_user) %>"><span class="glyphicon glyphicon-user"></span> <%= current_user[:name] %></a></li>
+            <!--<li><a href="<%= user_path(current_user) %>"><span class="glyphicon glyphicon-user"></span> <%= current_user[:name] %></a></li>-->
+            <li><a href="<%= edit_user_path(current_user) %>"><span class="glyphicon glyphicon-user"></span> <%= current_user[:name] %></a></li>
             <li><a href="<%= users_path %>"><span class="glyphicon glyphicon-list-alt"></span> Użytkownicy</a></li>
-            <li><a href="<%= edit_user_path(current_user) %>"><span class="glyphicon glyphicon-cog"></span> Ustawienia</a></li>
+            <!--<li><a href="<%= edit_user_path(current_user) %>"><span class="glyphicon glyphicon-cog"></span> Ustawienia</a></li>-->
             <li><a href="<%= logout_path %>" data-method="delete"><span class="glyphicon glyphicon-log-out"></span> Wyloguj</a></li>
         <% else %>
           <li><a href="<%= login_path %>"><span class="glyphicon glyphicon-log-in"></span> Logowanie</a></li>
@@ -68,10 +69,12 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
   <div class="container">
+   <div class="text-center">
     <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
     <% end %>
-    <%= yield %>
+   </div>
+   <%= yield %>
   </div>
 </div>
 
@@ -81,7 +84,7 @@
     <div class="col-md-6 col-md-offset-3 text-center">
       <h2>Na czym polega ZdarzyłoSięDzisiaj?</h2>
       <p> Zaglądaj tutaj codziennie, aby otrzymywać informacje o tym co wydarzyło się aktualnego dnia w latach poprzednich,
-          poznawaj historię, dowiedz się nowych ciekawych rzeczach, ale także korzystaj z opcji dodawania wydarzeń z własnego życia jako zarejestrowany użytkownik.
+          poznawaj historię, dowiedz się nowych ciekawych rzeczy, ale także korzystaj z opcji dodawania wydarzeń z własnego życia jako zarejestrowany użytkownik.
           Spersonalizuj tą stronę i zarejestruj się już teraz!</p>
       <p><%= link_to "Rejestracja &raquo;".html_safe, signup_path, class: "btn btn-default", role: "button" %></p>
     </div>
@@ -89,11 +92,9 @@
 
   <hr>
 
-  <footer>
-    <p>&copy; 2016 Company, Inc.</p>
+  <footer class="text-center">
+    <p>&copy; 2017 ZdarzyłoSięDzisiaj</p>
   </footer>
-
-  <%= debug(params) if Rails.env.development? %>
 
 </div> <!-- /container -->
 

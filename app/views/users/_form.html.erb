@@ -1,12 +1,14 @@
-<%= render 'shared/error_messages' %>
+<!-- Form Name -->
+<div class="page-header">
+  <h2><%= yield(:form_title) %></h2>
+</div>
+<div class="col-md-offset-2" style="margin-bottom: 40px">
+  <%= render 'shared/error_messages' %>
+</div>
 
+  <div class="row">
 <%= form_for(@user, html: { class: "form-horizontal"}) do |f| %>
     <fieldset>
-      <!-- Form Name -->
-      <div class="page-header">
-        <legend><%= yield(:form_title) %></legend>
-      </div>
-
       <!-- Text input-->
       <div class="form-group">
         <%= f.label :name, "Nazwa użytkownika", class: "col-md-4 control-label" %>
@@ -54,3 +56,4 @@
 
     </fieldset>
 <% end %>
+  </div>
