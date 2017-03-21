@@ -5,7 +5,7 @@
 <p>Aplikacja wyświetlająca informacje o aktualnym dniu oraz o powiązanych z nim wydarzeniach.<br>
    Każdy zarejestrowany użytkownik posiada możliwość spersonalizowania konkretnych dni i zapisywania wydarzeń z własnego życia.</p>
 
-- [ ] [Link do wdrożonej na zewnętrznym serwerze aplikacji](/)
+- [] [Link do wdrożonej na zewnętrznym serwerze aplikacji](https://zdarzylosiedzisiaj.herokuapp.com)
 
 <table>
   <tr>
@@ -18,15 +18,16 @@
   <tr>
     <td>2.3.3</td>
     <td>5.0.2</td>
-    <td>MySQL 5.7</td>
+    <td>Postgres</td>
     <td>Bootstrap</td>
-    <td>...</td>
+    <td>rails-i18n, bcrypt-ruby, faker</td>
   </tr>
 </table>
 
 <b>Opis wykorzystanych niestandardowych gemów:</b>
 
 <ul>
-<li> <strong>...</strong> - ...</li>
-<li> <strong>...</strong> - ...</li>
+<li> <strong>rails-i18n</strong> - Internacjonalizacja</li>
+<li> <strong>bcrypt-ruby</strong> - Algorytm haszujący</li>
+<li> <strong>faker</strong> - Generator danych</li>
 </ul>
