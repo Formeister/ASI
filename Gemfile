@@ -64,6 +64,9 @@ gem 'faker', '~> 1.7', '>= 1.7.3'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 gem 'bootstrap-will_paginate', '~> 0.0.11'
 
+#mediawiki
+gem 'mediawiki_api', '~> 0.7.1'
+
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'

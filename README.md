@@ -27,7 +27,9 @@
 <b>Opis wykorzystanych niestandardowych gemów:</b>
 
 <ul>
-<li> <strong>rails-i18n</strong> - Internacjonalizacja</li>
-<li> <strong>bcrypt-ruby</strong> - Algorytm haszujący</li>
-<li> <strong>faker</strong> - Generator danych</li>
+<li> <strong>mediawiki_api</strong> - Obsługa MediaWiki do pobierania wydarzeń z Wikipedii </li>
+<li> <strong>rails-i18n</strong> - Internacjonalizacja, spolszczenie wyświetlania dat, paginacji, użytkowników</li>
+<li> <strong>bcrypt-ruby</strong> - Algorytm haszujący dla haseł użytkowników</li>
+<li> <strong>faker</strong> - Generator danych, tworzenie użytkowników wraz z przypisanymi im zdarzeniami</li>
+<li> <strong>will_paginate</strong> - Paginacja przy wyświetlaniu listy użytkowników</li>
 </ul>

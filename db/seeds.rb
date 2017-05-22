@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
 # Dates
 
 date = Date.new(0004, 01, 01);
@@ -31,15 +32,16 @@ User.create!(name:  "Admin",
               password_confirmation: pass)
 end
 
-# Happenings
+# Happenings - Faker
 
 days_amount = Day.count
 first_day = Day.first
-first_day_id = first_day[:id]
+current_day_id = first_day[:id]
 
 days_amount.times do
-  day = Day.find_by(id: first_day_id)
-  first_day_id += 1
+  day = Day.find_by(id: current_day_id)
+  current_day_id += 1
+
   happenings_amount = Faker::Number.between(4, 8)
 
   happenings_amount.times do

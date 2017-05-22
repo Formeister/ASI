@@ -23,6 +23,7 @@ pl:
       short: "%d %b"
       day: "%d"
       month: "%B"
+      day_month: "%d %B"
     month_names:
     -
     - stycznia
