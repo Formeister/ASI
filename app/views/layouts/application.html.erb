@@ -67,12 +67,14 @@
 </nav>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
+<div class="jumbotron" style="padding-bottom: 2em; margin-bottom: 0em;">
   <div class="container">
-   <div class="text-center">
+   <div class="row">
+     <div class="text-center">
     <% flash.each do |message_type, message| %>
-        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type}", style: "margin: 4em 5em 0em 5em;") %>
     <% end %>
+     </div>
    </div>
    <%= yield %>
   </div>

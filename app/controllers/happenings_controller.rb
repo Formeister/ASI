@@ -6,7 +6,7 @@ class HappeningsController < ApplicationController
   end
 
   def destroy
-    @day = User.find(params[:day_id])
+    @day = Day.find(params[:day_id])
     @happening = @day.happenings.find(params[:id])
     @happening.destroy
     redirect_to day_path(@day)
@@ -14,6 +14,6 @@ class HappeningsController < ApplicationController
 
   private
   def happening_params
-    params.require(:happening).permit(:year, :body)
+    params.require(:happening).permit(:year, :body, :user_id)
   end
 end

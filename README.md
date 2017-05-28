@@ -20,7 +20,7 @@
     <td>5.0.2</td>
     <td>Postgres</td>
     <td>Bootstrap</td>
-    <td>rails-i18n, bcrypt-ruby, faker</td>
+    <td>mediawiki_api, rails-i18n, bcrypt-ruby, faker, will_paginate</td>
   </tr>
 </table>
 

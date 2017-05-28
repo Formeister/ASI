@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170321060429) do
+ActiveRecord::Schema.define(version: 20170522195832) do
 
   create_table "days", force: :cascade do |t|
     t.date     "date"
@@ -22,30 +22,22 @@ ActiveRecord::Schema.define(version: 20170321060429) do
   create_table "happenings", force: :cascade do |t|
     t.integer  "year"
     t.text     "body"
+    t.integer  "user_id"
     t.integer  "day_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["day_id"], name: "index_happenings_on_day_id"
-  end
-
-  create_table "user_happenings", force: :cascade do |t|
-    t.integer  "year"
-    t.text     "body"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "day_id"
-    t.index ["user_id"], name: "index_user_happenings_on_user_id"
+    t.index ["user_id"], name: "index_happenings_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
+    t.boolean  "admin",           default: false
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
     t.string   "password_digest"
     t.string   "remember_digest"
-    t.boolean  "admin",           default: false
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

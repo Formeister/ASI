@@ -1,12 +1,13 @@
 <!-- Form Name -->
-<div class="page-header">
+<div class="page-header text-center">
   <h2><%= yield(:form_title) %></h2>
 </div>
-<div class="col-md-offset-2" style="margin-bottom: 40px">
+<div class="col-md-offset-2 text-center" style="margin: 0em 5em 0em 5em;">
   <%= render 'shared/error_messages' %>
 </div>
 
   <div class="row">
+    <div class="col-md-offset-2">
 <%= form_for(@user, html: { class: "form-horizontal"}) do |f| %>
     <fieldset>
       <!-- Text input-->
@@ -49,11 +50,11 @@
       <!-- Button -->
       <div class="form-group">
         <label class="col-md-4 control-label" for="submit"></label>
-        <div class="col-md-4">
-          <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+        <div class="col-md-2">
+          <%= f.submit yield(:button_text), class: "btn btn-primary btn-block" %>
         </div>
       </div>
 
     </fieldset>
 <% end %>
-  </div>
+  </div></div>

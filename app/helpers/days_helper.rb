@@ -2,8 +2,6 @@ module DaysHelper
 
   # Wydarzenia z Wikipedii
 
-
-
   def wiki_happenings
     search_data = l @day.date, format: :day_month
 
