@@ -21,7 +21,7 @@ pl:
       default: "%d-%m-%Y"
       long: "%B %d, %Y"
       short: "%d %b"
-      day: "%d"
+      day: "%e"
       month: "%B"
       day_month: "%d %B"
     month_names:
