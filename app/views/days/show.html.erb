@@ -33,8 +33,10 @@
       <div>
         <% user_happenings = @day.happenings.where(:user_id => current_user[:id]).order(:year)
 
-            user_happenings.empty? %> <p><strong>Twoje wydarzenia:</strong></p>
-        <%  user_happenings.each do |user_happening|
+        if user_happenings.any? %>
+          <p><strong>Twoje wydarzenia:</strong></p>
+        <% end %>
+        <% user_happenings.each do |user_happening|
             if user_happening.day == @day %>
               <p><strong><%= user_happening.year %> r.</strong><br>
                 <small> (<%= distance_of_time_in_words_to_now(Date.new(user_happening.year,@day.date.month,@day.date.day)) %> temu)</small></p>
