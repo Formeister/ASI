@@ -18,7 +18,7 @@ module DaysHelper
     document.css("sup").remove
     document.css("ol").remove
 
-    @wiki_happenings = document.xpath('ul/li[not(@id) and a]')
+    @wiki_happenings = document.xpath('div/ul/li[not(@id) and a]')
 
   end
 end
